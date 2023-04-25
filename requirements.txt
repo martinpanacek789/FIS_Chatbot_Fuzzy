@@ -1,0 +1,5 @@
+streamlit~=1.21.0
+streamlit_chat
+requests
+deepl~=1.14.0
+fuzzywuzzy~=0.18.0
