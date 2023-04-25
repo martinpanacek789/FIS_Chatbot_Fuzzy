@@ -10,7 +10,8 @@ def find_classroom(pattern):
     floor = pattern_upper[2]
 
     if building in ['NB', 'SB', 'RB', 'IB']:
-        answer = f'Učebna {pattern_upper} se nachází v budově {building} (Areál Žižkov) na {floor}. patře.'
+        answer = f'Učebna {pattern_upper} se nachází v budově {building} (Areál Žižkov) na {floor}. patře. Plánek ' \
+                 f'areálu najdeš na https://www.vse.cz/wp-content/uploads/page/2419/planek_cz.pdf'
     elif building in ['JM']:
         answer = f'Učebna {pattern_upper} se nachází v budově {building} (Areál Jižní Město) na {floor}. patře.'
     else:
@@ -20,13 +21,13 @@ def find_classroom(pattern):
 
 
 dict_thresholds = {
-    'master': 30,
+    'master': 45,
     'food': 50,
     'general_info': 20,
     'bc_ai': 40,
     'bc_da': 40,
     'bc_ims': 40,
-    'bc_mme': 50,
+    'bc_mme': 40,
     'bc_mep': 40,
     'mgr_im': 40,
     'mgr_bi': 40,
@@ -44,7 +45,9 @@ def fuzzy_lookup(my_string, level):
     dict = get_dict(level)
     dict_answers = get_dict('answers')
 
-    print(dict)
+    my_string = my_string.lower()
+
+    # print(dict)
 
     if level in dict_thresholds.keys():
         threshold = dict_thresholds[level]

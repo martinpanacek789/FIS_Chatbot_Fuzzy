@@ -47,7 +47,7 @@ if user_input:
 
     answer = request_handler(user_input, deepl_api_key, translate=translate)
 
-    st.session_state.generated.append(f'You asked: {user_input}, Answer is: {answer}')
+    st.session_state.generated.append(answer)
 
 if st.session_state['generated']:
 
