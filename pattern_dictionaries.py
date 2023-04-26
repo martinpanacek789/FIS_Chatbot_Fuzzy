@@ -3,7 +3,8 @@ dict_master = {
     'menu': 'food',
     'oběd': 'food',
     'jídlo': 'food',
-    'jidlo': 'food',
+    'jidlu': 'food',
+    'je k jídlu': 'food',
     'aplikovaná informatika': 'bc_ai',
     'ai': 'bc_ai',
     'informatika': 'bc_ai',
@@ -12,6 +13,7 @@ dict_master = {
     'analytics': 'bc_da',
     "informační média a služby": 'bc_ims',
     'ims': 'bc_ims',
+    'imes': 'bc_ims',
     'informace': 'bc_ims',
     "matematické metody v ekonomii": 'bc_mme',
     'mme': 'bc_mme',
@@ -182,9 +184,11 @@ dict_mgr_st = {
 
 dict_general_info = {
     'fallback': 'Omlouvám se, ale nevím odpověď na tuto otázku, zkus ji prosím formulovat jinak.',
+    'obory': 'list_all_programs',
     'bakalář': 'bc_list_programs',
     'bakalářský': 'bc_list_programs',
     'bakalářské': 'bc_list_programs',
+    'bakalářské obory': 'bc_list_programs',
     'bakalářské studium': 'bc_list_programs',
     'bc': 'bc_list_programs',
     'bc.': 'bc_list_programs',
@@ -193,6 +197,8 @@ dict_general_info = {
     'msc': 'mgr_list_programs',
     'mgr': 'mgr_list_programs',
     'magisterské': 'mgr_list_programs',
+    'magisterské obory': 'mgr_list_programs',
+    'magisterské studium': 'mgr_list_programs',
     'ing': 'mgr_list_programs',
     'inženýr': 'mgr_list_programs',
     'inženýrský': 'mgr_list_programs',
@@ -203,6 +209,10 @@ dict_general_info = {
     'kreditů': 'credit_system',
     'ztratit kreditů': 'credit_system',
     'získat kreditů': 'credit_system',
+    'sb': 'sb',
+    'nb': 'nb',
+    'rb': 'rb',
+    'ib.': 'ib',
 }
 
 
@@ -244,17 +254,28 @@ dict_answers = {
                       'https://fis.vse.cz/wp-content/uploads/page/6984/studijni-plan-MvEP.png ' 
                       'Další informace o programu pak zde: https://fis.vse.cz/bakalarske-studium/bakalarske-programy'
                        '/program-multimedia-v-ekonomicke-praxi/',
-    'bc_list_programs': 'Informace o aktuálně nabízených bakalářské programech nalezneš zde: '
+    'bc_list_programs': 'Informace o aktuálně nabízených bakalářských programech nalezneš zde: '
                         'https://fis.vse.cz/bakalarske-studium/bakalarske-programy/',
     'mgr_list_programs': 'Informace o aktuálně nabízených magisterských programech nalezneš zde: '
                         'https://fis.vse.cz/magisterske-studium/',
-    'phd_list_programs': 'Informace o aktuálně doktorském studiu nalezneš zde: '
+    'list_all_programs': 'Informace o aktuálně nabízených bakalářských programech nalezneš zde: '
+                        'https://fis.vse.cz/bakalarske-studium/bakalarske-programy/'
+                        'Informace o magisterských oborech pak zde: https://fis.vse.cz/magisterske-studium/',
+    'phd_list_programs': 'Aktuální informace o doktorském studiu nalezneš zde: '
                         'https://fis.vse.cz/doktorske-studium/obecne-informace/',
     'credit_system': 'K dokončení bakalářského studia je potřeba  180 kreditů (k dispozici 36 rezervních), '
                      'k dokončení magisterského studia je potřeba 120 kreditů (k dispozici 24 rezervních). Další '
                      'informace o kreditním systému nalezneš zde:'
                      'https://fmv.vse.cz/studijni-informace/bakalarske-a-magisterske-studium/studijni-situace-a'
-                     '-jejich-reseni/kredity-registrace-a-zapis-predmetu/'
+                     '-jejich-reseni/kredity-registrace-a-zapis-predmetu/',
+    'sb': 'SB je stará budova v areálu na žižkově, plán areálu najdeš zde: '
+          'https://www.vse.cz/wp-content/uploads/page/2419/planek_cz.pdf',
+    'nb': 'NB je nová budova v areálu na žižkově, plán areálu najdeš zde: '
+          'https://www.vse.cz/wp-content/uploads/page/2419/planek_cz.pdf',
+    'rb': 'RB je rajská budova v areálu na žižkově, plán areálu najdeš zde: '
+          'https://www.vse.cz/wp-content/uploads/page/2419/planek_cz.pdf',
+    'ib': 'RB je italská budova v areálu na žižkově, plán areálu najdeš zde: '
+          'https://www.vse.cz/wp-content/uploads/page/2419/planek_cz.pdf',
 }
 
 def get_dict(dict_name):
