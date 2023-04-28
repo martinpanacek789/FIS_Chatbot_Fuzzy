@@ -23,7 +23,7 @@ def find_classroom(pattern):
 dict_thresholds = {
     'master': 45,
     'food': 50,
-    'general_info': 20,
+    'general_info': 40,
     'bc_ai': 40,
     'bc_da': 40,
     'bc_ims': 40,

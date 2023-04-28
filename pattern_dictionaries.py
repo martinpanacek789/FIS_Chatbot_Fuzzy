@@ -43,6 +43,8 @@ dict_master = {
     "statistika": 'mgr_st',
     "statistiku": 'mgr_st',
     "magistr statistika": 'mgr_st',
+    "mgr_ba": 'mgr_ba',
+    "magistr business analýza": 'mgr_ba',
 }
 
 dict_food = {  # OK
@@ -182,8 +184,20 @@ dict_mgr_st = {
 
 }
 
+dict_mgr_ba = {
+    'fallback': 'Informace o studijním programu Byznys analýza nalezneš zde: '
+                'https://fis.vse.cz/magisterske-studium/magisterske-programy/business-analyza-ist/',
+    'předměty': 'mgr_ba_subjects',
+    'uchazeč': 'mgr_ba_applicants',
+    'přijatých': 'mgr_ba_applicants',
+    'počet přijatých': 'mgr_ba_applicants',
+    'počet': 'mgr_ba_applicants',
+
+}
+
 dict_general_info = {
-    'fallback': 'Omlouvám se, ale nevím odpověď na tuto otázku, zkus ji prosím formulovat jinak.',
+    'fallback': 'Ahoj, omlouvám se ale na tuhle otázku zatím neznám odpověď. Můžeš se mě ale zeptat na něco ohledně '
+                'kreditového systému, studijních programů a oborů nebo na školní menzu!',
     'obory': 'list_all_programs',
     'bakalář': 'bc_list_programs',
     'bakalářský': 'bc_list_programs',
@@ -234,6 +248,7 @@ dict_answers = {
     'mgr_eov_applicants': 'Předpokládaný počet přijímaných uchazečů do programu Ekonometrie a operační výzkum: 40',
     'mgr_ed_applicants': 'Předpokládaný počet přijímaných uchazečů do programu Ekonomická demografie: 40',
     'mgr_st_applicants': 'Předpokládaný počet přijímaných uchazečů do programu Statistika: 50',
+    'mgr_ba_applicants': 'Předpokládaný počet přijímaných uchazečů do programu Business analýza: 50',
     'bc_ai_subjects': 'Doporučený studijní plán pro program Aplikovaná informatika nalezneš zde: '
                       'https://fis.vse.cz/wp-content/uploads/page/58/Aplikovana-informatika.png ' 
                       'Další informace o programu pak zde: https://fis.vse.cz/bakalarske-studium/bakalarske-programy'
